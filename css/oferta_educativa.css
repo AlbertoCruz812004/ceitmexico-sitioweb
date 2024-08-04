@@ -1,0 +1,256 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem 0;
+    background-image: linear-gradient(to bottom, #140671, #14077d, #14078a, #120896, #1009a3, #110caf, #1210ba, #1213c6, #1719d3, #1b1fe0, #1e25ed, #212bfb);
+
+    .content {
+        text-align: center;
+
+        h1,
+        p {
+            color: #fafafa;
+        }
+
+        p {
+            font-family: 'DMsans';
+            font-size: 1.2rem;
+        }
+    }
+
+    svg {
+        width: 90%;
+    }
+}
+
+#informatica {
+    width: 100%;
+    height: auto;
+    padding: 3rem 1rem 2rem;
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        margin-top: 1rem;
+        font-family: 'DMsans';
+        font-size: 1.2rem;
+    }
+
+    .modules {
+        display: flex;
+        flex-wrap: wrap;
+        height: 70%;
+        padding: 3rem 0;
+        gap: 2rem;
+
+        details {
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid var(--bdr);
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+
+            .module {
+                display: flex;
+                align-items: center;
+                height: 80px;
+                padding: 5px 10px;
+                border: none;
+                background-color: var(--bg);
+                gap: 0.5rem;
+                border-radius: 5px;
+
+                h6 {
+                    font-family: 'Almarai';
+                    font-size: 1rem;
+                    color: #fafafa;
+                }
+            }
+
+            .icons {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding: 1.5rem 1rem 0;
+            }
+        }
+
+        details[open] {
+            min-height: 180px;
+        }
+    }
+}
+
+#ingles {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem 1rem;
+
+    h3,
+    p {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        margin-top: 1rem;
+        font-family: 'DMsans';
+        font-size: 1.2rem;
+    }
+
+    .modules {
+        display: flex;
+        flex-wrap: wrap;
+        height: 70%;
+        padding: 3rem 0;
+        gap: 2rem;
+
+        details {
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid var(--bdr);
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+
+            .module {
+                display: flex;
+                align-items: center;
+                height: 80px;
+                padding: 5px 10px;
+                border: none;
+                background-color: var(--bg);
+                gap: 0.5rem;
+                border-radius: 5px;
+
+                h6 {
+                    font-family: 'Almarai';
+                    font-size: 1rem;
+                    color: #fafafa;
+                }
+            }
+
+            .icons {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding: 1.5rem 1rem 0;
+            }
+        }
+
+        details[open] {
+            min-height: 180px;
+        }
+    }
+}
+
+#prepa {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem 1rem;
+
+    h4,
+    p {
+        text-align: center;
+    }
+
+    h4 {
+        font-family: 'Poppins';
+        font-size: 1.8rem;
+    }
+
+    p {
+        margin-top: 1rem;
+        font-family: 'DMsans';
+        font-size: 1.2rem;
+    }
+
+    .modules {
+        display: flex;
+        flex-wrap: wrap;
+        height: 70%;
+        padding: 3rem 0;
+        gap: 2rem;
+
+        details {
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid var(--bdr);
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+
+            .module {
+                display: flex;
+                align-items: center;
+                height: 80px;
+                padding: 5px 10px;
+                border: none;
+                background-color: var(--bg);
+                gap: 0.5rem;
+                border-radius: 5px;
+
+                h6 {
+                    font-family: 'Almarai';
+                    font-size: 1rem;
+                    color: #fafafa;
+                }
+            }
+
+            .icons {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding: 1.5rem 1rem 0;
+            }
+        }
+
+        details[open] {
+            min-height: 180px;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    main {
+        .content {
+            width: 50%;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        svg {
+            width: 30%;
+        }
+    }
+
+    #informatica,
+    #ingles,
+    #prepa {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,150 @@
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100svh;
+	align-items: center;
+	padding: 5rem 0.5rem 1rem;
+	background: linear-gradient(to bottom, #070276, #07027e, #060286, #06038e, #050396, #06039d, #0804a3, #0a04aa, #0f04b0, #1404b7, #1803bd, #1c03c4);
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		border: 2px solid #000;
+		border-radius: 12px;
+		padding: 5px;
+		background: #fafafa;
+
+		figure {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 100%;
+			border: 2px solid #000;
+		}
+
+		h1 {
+			font-size: 1.3rem;
+			color: #2D55E2;
+		}
+
+		p {
+			font-family: 'Roboto';
+			font-size: 0.9rem;
+		}
+	}
+
+	h2 {
+		margin-top: 1rem;
+		text-align: center;
+		width: 80%;
+		color: #fafafa;
+		font-size: clamp(1.8rem, 3vw, 6rem);
+	}
+
+	.materias {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		width: 100%;
+		align-items: center;
+		padding: 2rem 0 0;
+
+		details {
+			border-radius: 12px 12px 0 0;
+			border: 2px solid #000;
+			width: 90%;
+			background: #fafafa;
+
+			summary {
+				border-radius: 10px 10px 0 0;
+				display: flex;
+				gap: 1rem;
+				align-items: center;
+				background: #2D55E2;
+				width: 100%;
+				padding: 0.5rem;
+				justify-content: center;
+				color: #fafafa;
+			}
+
+			article {
+				margin-top: 0.5rem;
+				display: flex;
+				justify-content: space-around;
+				padding-bottom: 0.5rem;
+
+				p {
+					font-family: 'Roboto';
+
+					strong {
+						font-family: 'Almarai';
+					}
+				}
+			}
+		}
+	}
+
+	.card-materias {
+		display: none;
+	}
+}
+
+@media(max-width: 767px) {
+	main .materias2 {
+		display: none;
+	}
+}
+
+@media(min-width: 768px) {
+	main {
+		.materias {
+			display: none;
+		}
+
+		.materias2 {
+			width: 100%;
+			padding: 3rem 2rem 1rem;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2.5rem;
+
+			.materia {
+				width: calc(100% / 4);
+				min-height: 100px;
+				max-height: 150px;
+				background: #fff;
+				padding: 1rem 0;
+				border-radius: 16px;
+
+				text-align: center;
+
+				p {
+					font-family: 'DMsans';
+
+					strong {
+						font-family: 'Almarai';
+					}
+				}
+			}
+
+			.materia:hover {
+				background: #1a1a1b;
+				color: #fafafa;
+
+				svg {
+					path {
+						fill: #fafafa;
+					}
+
+					.pp {
+						fill: #1a1a1b;
+					}
+				}
+			}
+		}
+
+	}
+}

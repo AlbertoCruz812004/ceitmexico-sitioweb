@@ -1,0 +1,323 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100svh;
+    background-image: linear-gradient(to bottom, #140671, #14077d, #14078a, #120896, #1009a3, #110caf, #1210ba, #1213c6, #1719d3, #1b1fe0, #1e25ed, #212bfb);
+    background-size: cover;
+    background-position: top;
+    padding: 0 1.5rem;
+
+    h1,
+    p {
+        text-align: center;
+        color: #e9e7e7;
+    }
+
+    p {
+        font-family: 'DMsans';
+    }
+
+    button {
+        border-radius: 6px;
+        border: 2px solid #fff;
+        font-family: 'Almarai';
+        padding: 0.3rem 0;
+        background-color: transparent;
+        color: #e9e7e7;
+
+    }
+
+}
+
+@media(min-width: 768px) {
+    main {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.35)), url('../images/home/background.jpg');
+        height: 55vh;
+        padding: 0 3rem;
+        align-items: center;
+
+        h1 span {
+            
+        }
+
+        button {
+            width: 30%;
+            background-color: #fafafa;
+            color: #000;
+            font-size: 0.8em;
+            padding: 0.2rem 0;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #2D55E2;
+            color: #fafafa;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    main {
+        height: 100vh;
+        background-position: center;
+        align-items: flex-start;
+        padding: 0 0 0 10rem;
+
+        h1 {
+            width: 600px;
+            font-size: 2.5rem;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        button {
+            margin-left: 8rem;
+            transition: 0.5s;
+        }
+    }
+}
+
+#beneffits-section {
+    width: 100%;
+    min-height: 50svh;
+    padding: 1.5rem 1rem;
+
+    h2 {
+        text-align: center;
+        font-size: 1.7em;
+
+        span {
+            color: #2D55E2;
+        }
+    }
+
+    .container {
+        margin-top: 1.5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 25%;
+            gap: 1rem;
+
+            .icon {
+                width: 35px;
+                height: 35px;
+            }
+
+            h4 {
+                font-family: 'Almarai';
+                font-size: 1.2em;
+            }
+
+            p {
+                font-family: 'DMsans';
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    #beneffits-section {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .container .card {
+            width: 25%;
+        }
+    }
+}
+
+#courses-section {
+    width: 100%;
+    min-height: 50svh;
+    padding: 2rem 2rem 0;
+    background-color: #E6E6E6;
+
+    h3,
+    p {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.5em;
+
+        span {
+            color: #2D55E2;
+        }
+    }
+
+    p {
+        font-family: 'DMsans';
+        margin-top: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 50%;
+        gap: 2rem;
+        margin-top: 2rem;
+        padding: 2rem;
+        justify-content: center;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 19rem;
+            min-width: 12rem;
+            gap: 1.5rem;
+            background-color: #0b1c6d;
+            padding: 2rem;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.25) 40%, rgba(0, 0, 0, 0.25)), var(--image);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            h4 {
+                font-family: 'Poppins';
+                color: #fff;
+            }
+
+            #cmd {
+                background-color: #28272c;
+                border-radius: 3px;
+                padding: 0.2rem;
+            }
+
+            button {
+                width: 100%;
+                border-radius: 5px;
+                background: #fff;
+                color: #28272c;
+                font-family: 'Almarai';
+                border: 3px solid transparent;
+                border-radius: 7px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    #courses-section {
+        height: 90vh;
+
+        .container {
+            height: 80%;
+            justify-content: space-around;
+
+            .card {
+                height: 100%;
+                width: 15rem;
+
+                h4 {
+                    font-size: 1.2em;
+                }
+
+                .icon-principal {
+                    transform: scale(1.3);
+                }
+
+                button:hover {
+                    background-color: #2D55E2;
+                    color: #fafafa;
+                }
+            }
+        }
+    }
+}
+
+#carousel-section {
+    width: 100%;
+    min-height: 50vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 0;
+
+
+    .container {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #000;
+
+        .carousel {
+            width: 500%;
+            height: 100%;
+            display: flex;
+            transition: all 0.8s ease;
+
+            .slider-section {
+                width: calc(100% / 5);
+                height: 100%;
+
+                img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .btn-left,
+    .btn-right {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        background-color: transparent;
+        cursor: pointer;
+        transform: translateX(-50%);
+        user-select: none;
+        border-radius: 50%;
+    }
+
+    .btn-left {
+        left: 15px;
+    }
+
+    .btn-right {
+        right: 5px;
+    }
+}
+
+@media(min-width: 1024px) {
+    #carousel-section {
+        height: 80vh;
+
+        .container {
+            width: 70%;
+            height: 400px;
+
+        }
+    }
+
+}

@@ -1,0 +1,137 @@
+body {
+    background-image: linear-gradient(to bottom, #140671, #14077d, #14078a, #120896, #1009a3, #110caf, #1210ba, #1213c6, #1719d3, #1b1fe0, #1e25ed, #212bfb);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    width: 100%;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+    background-image: url('../images/alumnos/background.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: #0c0c94;
+
+
+    .login {
+        width: 90%;
+        height: 70%;
+        background: #fafafa;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 2rem 0 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        .header {
+            img {
+                width: 6rem;
+            }
+
+            h1 {
+                color: #2D55E2;
+                font-size: 2.3rem;
+                text-align: center;
+            }
+        }
+
+        .container {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 35%;
+
+
+            .input {
+                width: 70%;
+                height: 20%;
+                border-radius: 10px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                padding-left: 10px;
+                border: 2px solid #dad5d5;
+                background-color: #f7f4f4;
+
+                input {
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0);
+                    font-family: 'DMsans';
+                    font-weight: 400;
+                    width: 80%;
+                    color: #000;
+                }
+
+                input::placeholder {
+                    color: #afacac;
+                    font-family: 'Almarai';
+                }
+
+                input:focus {
+                    outline: none;
+                }
+
+                input[type="password"]::-ms-reveal {
+                    display: none;
+                }
+
+            }
+        }
+
+        a {
+            font-size: 0.8em;
+            text-decoration: none;
+            color: #c2c2c2;
+            font-family: 'Almarai';
+        }
+
+        .btn-submit {
+            margin: 5vh auto 0;
+            width: 60%;
+            height: 4.3vh;
+            border-radius: 16px;
+            border: none;
+            background-color: #2D55E2;
+            font-family: 'Almarai';
+            font-size: 0.9rem;
+            color: #e2dddd;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    main .login {
+        width: 60%;
+
+        .container .input {
+            height: 15%;
+        }
+
+        a {
+            font-size: 1em;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    main .login {
+        width: 30%;
+        height: 80%;
+
+        .container .input {
+            height: 20%;
+        }
+
+        a {
+            font-size: 0.8em;
+        }
+    }
+}

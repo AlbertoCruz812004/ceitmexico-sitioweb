@@ -1,0 +1,149 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #140671, #14077d, #14078a, #120896, #1009a3, #110caf, #1210ba, #1213c6, #1719d3, #1b1fe0, #1e25ed, #212bfb);
+
+    width: 100%;
+    height: 100svh;
+
+    h1,
+    p {
+        color: #fafafa;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-family: 'DMsans';
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+@media(min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 5rem 1.7rem;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    main {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.50) 40%, rgba(0, 0, 0, 0.50)), url('../images/Planteles/backgrund-plantel.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        align-content: center;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 10% 40%;
+        gap: 0 3.5rem;
+        grid-template-areas:
+            "title hero-image"
+            "content hero-image";
+
+        .title {
+            grid-area: title;
+            text-align: center;
+            font-size: max(3.5vw, 2em, 2rem);
+        }
+
+        .content {
+            grid-area: content;
+            font-size: max(min(0.7vw, 0.7em), 1.2rem);
+        }
+
+        .hero-image {
+            grid-area: hero-image;
+            width: max(20vw, 200px);
+        }
+    }
+}
+
+section {
+    width: 100%;
+    min-height: 40svh;
+    max-height: 70svh;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .container {
+        width: 100%;
+        min-height: 70px;
+
+        .group-button {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+
+            button {
+                padding: 0.5rem 1.5rem;
+                border: 2px solid #000;
+                font-family: 'Almarai';
+            }
+
+            .active {
+                background: #2D55E2;
+                color: #fafafa;
+            }
+        }
+    }
+
+    #information {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-family: 'Dmsans';
+
+            strong {
+                font-family: 'Almarai';
+            }
+        }
+    }
+}
+
+/* @media(min-width: 1024px) {
+    section {
+        .container .group-button {
+            justify-content: center;
+        }
+    }
+} */
