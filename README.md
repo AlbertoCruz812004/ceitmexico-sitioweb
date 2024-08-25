@@ -29,7 +29,7 @@ Here're some of the project's best features:
   
 <h2>💻 Built with</h2>
 
-Technologies used in the project:
+Tecnológias utilizadas en este proyecto:
 
 *   html
 *   css
