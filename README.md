@@ -36,3 +36,15 @@ Tecnológias utilizadas en este proyecto:
 *   php
 *   javascript
 *   supabase
+
+<h2>🛠️ Configuracion php:</h2>
+
+<p>Para poder utilizar la conexion a base de datos debe ya tener configurado php en su maquina local en caso de no tener los archivos configurados puede obtenerlos en el link del siguiente repositorio</p>
+
+```
+https://github.com/AlbertoCruz812004/configuracion-php.git
+```
+
+<p>
+En caso de ya tener configurado php no es necesario realizar dicha configuración
+</p>
