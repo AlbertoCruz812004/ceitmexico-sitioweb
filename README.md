@@ -10,9 +10,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://i.ibb.co/dtmgjhb/Captura-de-pantalla-2024-08-25-151142.png" alt="project-screenshot" width="250" height="250/">
+<img src="https://i.ibb.co/dtmgjhb/Captura-de-pantalla-2024-08-25-151142.png" alt="project-screenshot" width="250">
 
-<img src="https://i.ibb.co/5Gjvm7F/Captura-de-pantalla-2024-08-25-151056.png" alt="project-screenshot" width="250" height="250/">
+<img src="https://i.ibb.co/5Gjvm7F/Captura-de-pantalla-2024-08-25-151056.png" alt="project-screenshot" width="250">
 
   
   
